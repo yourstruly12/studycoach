@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reminders - Study Coach</title>
+    <link rel="stylesheet" href="{% static 'studycoach/style.css' %}">
+</head>
+<body>
+    <h1>⏰ Your Reminders</h1>
+    <p>Here are your upcoming reminders:</p>
+
+    <div class="reminders">
+        <h2>Upcoming Reminders:</h2>
+        <ul>
+            <li>Assignment 1: Due in 2 days</li>
+            <li>Midterm Exam: 1 Week Left!</li>
+            <li>Project Submission: 2 Weeks Left</li>
+        </ul>
+    </div>
+
+    <div class="reminder-actions">
+        <p>Want to add a new reminder?</p>
+        <a href="{% url 'add_reminder' %}">Add Reminder</a>
+    </div>
+
+    <p><a href="{% url 'home' %}">Back to Home</a></p>
+</body>
+</html>

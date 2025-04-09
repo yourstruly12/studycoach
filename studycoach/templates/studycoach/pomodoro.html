@@ -1,0 +1,20 @@
+<h2>⏱ Pomodoro Timer</h2>
+<p id="timer">25:00</p>
+<button onclick="startTimer()">Start</button>
+<script>
+let seconds = 1500;
+let interval;
+function startTimer() {
+  interval = setInterval(() => {
+    seconds--;
+    let min = Math.floor(seconds / 60);
+    let sec = seconds % 60;
+    document.getElementById("timer").innerText = `${min}:${sec < 10 ? '0' + sec : sec}`;
+    if (seconds <= 0) {
+      clearInterval(interval);
+      alert("Time's up! Take a 5-minute break!");
+    }
+  }, 1000);
+}
+</script>
+<a href="{% url 'home' %}">Back Home</a>

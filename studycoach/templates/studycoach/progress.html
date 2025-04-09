@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress - Study Coach</title>
+    <link rel="stylesheet" href="{% static 'studycoach/style.css' %}">
+</head>
+<body>
+    <h1>📈 Your Progress</h1>
+    <p>Here's how you're doing with your tasks:</p>
+
+    <div class="progress">
+        <h2>Completed Tasks:</h2>
+        <ul>
+            <li>Assignment 1: ✅ Completed</li>
+            <li>Midterm Exam: ⏳ Ongoing</li>
+            <li>Project Submission: ❌ Not Started</li>
+        </ul>
+    </div>
+
+    <div class="progress-actions">
+        <p>Keep it up!</p>
+        <a href="{% url 'task_list' %}">View Task List</a>
+    </div>
+
+    <p><a href="{% url 'home' %}">Back to Home</a></p>
+</body>
+</html>

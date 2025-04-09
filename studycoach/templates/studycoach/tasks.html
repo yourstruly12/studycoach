@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task List - Study Coach</title>
+    <link rel="stylesheet" href="{% static 'studycoach/style.css' %}">
+</head>
+<body>
+    <h1>📋 Your Task List</h1>
+
+    {% if tasks %}
+        <ul>
+            {% for task in tasks %}
+                <li>
+                    <strong>{{ task.title }}</strong> – Due: {{ task.due_date }}
+                    <br>
+                    {{ task.description }}
+                    {% if task.is_completed %}
+                        ✅ Completed
+                    {% else %}
+                        ❌ Not Completed
+                    {% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No tasks yet. Go ahead and <a href="{% url 'add_task' %}">add one</a>!</p>
+    {% endif %}
+
+    <p><a href="{% url 'add_task' %}">➕ Add a New Task</a></p>
+    <p><a href="{% url 'home' %}">🏠 Back to Home</a></p>
+</body>
+</html>

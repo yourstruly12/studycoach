@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Coach</title>
+    <link rel="stylesheet" href="{% static 'studycoach/style.css' %}">
+    <!-- <link rel="stylesheet" type="text/css" href="{% static 'studycoach/style.css' %}"> -->
+
+</head>
+<body>
+    <header>
+        <h1>📚 Welcome to Study Coach</h1>
+    </header>
+    <main>
+        <section>
+            <p>Your personal study assistant to help you stay on top of tasks, manage deadlines, and improve focus!</p>
+            
+            <!-- Navigation Links -->
+            <p><a href="{% url 'task_list' %}">View All Tasks</a> | <a href="{% url 'add_task' %}">Add a New Task</a> | <a href="{% url 'pomodoro' %}">Start Pomodoro</a></p>
+
+            <!-- Additional Features -->
+            <section>
+                <h2>Your Study Plan</h2>
+                <p>Stay organized with your personalized study schedule. <a href="{% url 'study_plan' %}">View Study Plan</a></p>
+            </section>
+            
+            <section>
+                <h2>Motivational Tips</h2>
+                <p>Need a little encouragement? Get motivational tips to help you stay on track! <a href="{% url 'motivation' %}">Get Motivation</a></p>
+            </section>
+
+            <section>
+                <h2>Progress Tracker</h2>
+                <p>Track your progress and see how far you've come! <a href="{% url 'progress' %}">Check Progress</a></p>
+            </section>
+            
+            <section>
+                <h2>Smart Reminders</h2>
+                <p>Never miss a deadline with smart reminders. <a href="{% url 'reminders' %}">Manage Reminders</a></p>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Study Coach - All Rights Reserved</p>
+    </footer>
+</body>
+</html>

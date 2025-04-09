@@ -1,0 +1,34 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Plan - Study Coach</title>
+    <link rel="stylesheet" href="{% static 'studycoach/style.css' %}">
+</head>
+<body>
+    <h1>📚 Your Study Plan</h1>
+    <p>Here is your personalized study plan based on your deadlines:</p>
+
+    <div class="study-plan">
+        <h2>Upcoming Tasks:</h2>
+        <ul>
+            <li>Assignment 1: Due April 10, 2025</li>
+            <li>Midterm Exam: April 15, 2025</li>
+            <li>Project Submission: April 20, 2025</li>
+        </ul>
+    </div>
+
+    <div class="plan-actions">
+        <p>Would you like to adjust your study plan?</p>
+        <a href="{% url 'adjust_plan' %}">Adjust Study Plan</a>
+    </div>
+    <div class="plan-actions">
+        <p>Would you like to adjust your study plan?</p>
+        <a href="{% url 'adjust_plan' %}">Adjust Study Plan</a>
+    </div>
+    <p><a href="{% url 'home' %}">Back to Home</a></p>
+</body>
+</html>

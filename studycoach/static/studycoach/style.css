@@ -1,0 +1,181 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7faff;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header Styling */
+h1 {
+    font-size: 2.5rem;
+    color: #004466;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 2px solid #4CAF50;
+}
+
+h2, h3 {
+    color: #4CAF50;
+}
+
+/* Links */
+a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Form Styling */
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+/* Task List Styling */
+.task-list {
+    margin-top: 20px;
+}
+
+.task-list ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.task-list li {
+    background-color: #e6f3ff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.task-list li.completed {
+    background-color: #d4edda;
+    text-decoration: line-through;
+}
+
+/* Pomodoro Timer */
+.pomodoro-timer {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 30px;
+}
+
+.pomodoro-timer h2 {
+    font-size: 2rem;
+}
+
+.pomodoro-timer .timer {
+    font-size: 3rem;
+    color: #4CAF50;
+    margin: 20px 0;
+}
+
+.pomodoro-timer .controls button {
+    margin: 10px;
+}
+
+/* Progress Tracker */
+.progress-tracker {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.progress-tracker h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.progress-tracker .progress-bar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    height: 10px;
+}
+
+.progress-tracker .progress-bar-filled {
+    height: 10px;
+    background-color: #4CAF50;
+    width: 60%; /* Set dynamically */
+}
+
+/* Motivation Section */
+.motivation {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.motivation h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.motivation p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 40px;
+    border-radius: 5px;
+}
+
+/* General List Styling */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #e6f3ff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}

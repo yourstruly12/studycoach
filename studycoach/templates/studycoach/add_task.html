@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Task - Study Coach</title>
+    <link rel="stylesheet" href="{% static 'studycoach/style.css' %}">
+</head>
+<body>
+    <h1>➕ Add a New Task</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save Task</button>
+    </form>
+
+    <p><a href="{% url 'task_list' %}">📋 Back to Task List</a></p>
+</body>
+</html>

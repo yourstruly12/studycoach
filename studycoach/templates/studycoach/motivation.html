@@ -1,0 +1,32 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivation - Study Coach</title>
+    <link rel="stylesheet" href="{% static 'studycoach/style.css' %}">
+</head>
+<body>
+    <h1>🎯 Motivation</h1>
+    <p>Stay focused and keep pushing forward! Here’s some motivation for you:</p>
+
+    <div class="motivation">
+        <blockquote>
+            <p>"The future depends on what you do today." – Mahatma Gandhi</p>
+        </blockquote>
+
+        <blockquote>
+            <p>"Success is the sum of small efforts, repeated day in and day out." – Robert Collier</p>
+        </blockquote>
+    </div>
+
+    <div class="motivation-actions">
+        <p>Need more inspiration?</p>
+        <a href="{% url 'motivation' %}">Get More Motivation</a>
+    </div>
+
+    <p><a href="{% url 'home' %}">Back to Home</a></p>
+</body>
+</html>
